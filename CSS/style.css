@@ -1,0 +1,386 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Graysih-Magenta: hsl(303, 10%, 53%);
+    --Ligh-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--White);
+    font-size: 1.6rem;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 84vw;
+    margin: 0 auto;
+}
+
+
+/* HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE HEADLINE */
+.headline {
+    margin: 9rem 0 0 0;
+}
+
+.headline__caption {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.headline__caption__title {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 3.2rem;
+}
+
+.headline__description {
+    width: 103%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline__description__text {
+    color: var(--Dark-Graysih-Magenta);
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+
+
+/* RATINGS RATINGS RATINGS RATINGS RATINGS RATINGS RATINGS RATINGS RATINGS */
+.rating-container {
+    margin: 4rem auto 5rem auto;
+}
+
+.rating {
+    background-color: var(--Ligh-Grayish-Magenta);
+    text-align: center;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+}
+
+.rating__svg {
+    margin: 1rem 0;
+    padding-top: 1.5rem;
+}
+
+.rating__svg svg {
+    margin: 0 .2rem;
+}
+
+.rating__description {
+    margin: 1rem 0;
+    padding-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+}
+
+
+/* CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS */
+
+.card-container {
+    margin-bottom: 10rem;
+}
+
+.card {
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 1.5rem 0;
+}
+
+
+.card__user {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.card__user__image {
+    border-radius: 4rem;
+    width: 3.8rem;
+    margin-left: .4rem;
+}
+
+.card__user__buyer {
+    margin-left: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.card__user__buyer__name {
+    color: var(--Ligh-Grayish-Magenta);
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin: .6rem;
+}
+
+.card__user__buyer__verified {
+    color: var(--Soft-Pink);
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1rem;
+    margin: .6rem;
+}
+
+.card__review {
+    color: var(--Ligh-Grayish-Magenta);
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+}
+
+#top-mb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#bottom-mb {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#top-dt, #bottom-dt {
+    display: none;
+}
+
+
+
+/* MEDIA QUERIES MQs MEDIA QUERIES MQs MEDIA QUERIES MQs MEDIA QUERIES MQs */
+
+@media (min-width: 766px) {
+
+    .headline-rating {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 2rem;
+    }
+
+    .headline {
+        text-align: center;
+    }
+
+    .headline__caption {
+        text-align: center;
+        width: 90%;
+        margin: none;
+    }
+
+    .headline__description {
+        width: 90%;
+    }
+
+    .rating-container {
+        margin-top: 9rem;
+        width: 90%;
+    }
+
+    .card-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media (min-width: 1400px) {
+
+    .container {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    /* HEADLINE MQs HEADLINE MQs */
+    .headline-rating {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        margin-bottom: 4.5rem;
+    }
+
+    .headline {
+        text-align: left;
+    }
+
+    .headline__caption {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    .headline__caption__title {
+        font-size: 6.5rem;
+        line-height: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .headline__description {
+        margin: 0 auto;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .headline__description__text {
+        font-size: 2.1rem;
+        line-height: 2.7rem;
+    }
+
+    /* RATINGS MQs RATINGS MQs */
+
+    .rating-container {
+        margin: auto auto;
+        padding-top: 10rem;
+        padding-left: 15%;
+        width: 100%;
+    }
+
+    .rating {
+        display: flex;
+        margin: 2.1rem auto;
+        padding: 1.9rem 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rating__svg {
+        margin: 0;
+        padding: 0 3rem 0 0;
+    }
+
+    .rating__svg svg {
+        margin: 0 .2rem;
+    }
+
+    .rating__description {
+        margin: 0;
+        padding: 0;
+        font-size: 2.1rem;
+        font-weight: 700;
+    }
+
+    .margin-left-5 {
+        margin-left: 5rem;
+    }
+
+    .margin-left-10 {
+        margin-left: 10rem;
+    }
+
+    .margin-right-5 {
+        margin-right: 5rem;
+    }
+
+    .margin-right-10 {
+        margin-right: 10rem;
+    }
+
+
+    /* CARD MQs CARD MQs */
+
+    .card-container {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .card {
+        padding: 3.4rem;
+        margin: 0;
+    }
+
+
+    .card__user__image {
+        width: 4.5rem;
+    }
+
+
+    .card__user__buyer__name {
+        font-size: 1.85rem;
+        line-height: 1rem;
+        margin: .6rem;
+    }
+
+    .card__user__buyer__verified {
+        font-size: 1.85rem;
+        line-height: 1rem;
+        margin: .6rem;
+    }
+
+    .card__review {
+        color: var(--Ligh-Grayish-Magenta);
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .margin-right {
+        margin-right: 3rem;
+    }
+
+    .margin-2 {
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+    }
+
+    .margin-4 {
+        margin-top: 4rem;
+        margin-bottom: -2rem;
+    }
+
+
+    #top-dt {
+        display: inline;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    #bottom-dt {
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    #top-mb, #bottom-mb {
+        display: none;
+    }
+}
