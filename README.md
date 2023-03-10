@@ -16,7 +16,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ## Overview
 
-First Frontend Mentor challenge, a QR code with the following design:
+Frontend Mentor challenge, a Social proof section with the following design:
 
 ![](./readme-imgs/desktop-design.jpg)
 ![](./readme-imgs/mobile-design.jpg)
