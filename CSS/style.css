@@ -34,6 +34,7 @@ img {
 
 .container {
     max-width: 84vw;
+    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -192,6 +193,7 @@ img {
 
     .headline {
         text-align: center;
+        margin: 8.1rem 0 0 0;
     }
 
     .headline__caption {
@@ -220,15 +222,14 @@ img {
 @media (min-width: 1400px) {
 
     .container {
-        max-width: 80vw;
+        max-width: 77vw;
         margin: 0 auto;
     }
 
     /* HEADLINE MQs HEADLINE MQs */
     .headline-rating {
         display: grid;
-        grid-template-columns: 45% 55%;
-        margin-bottom: 4.5rem;
+        margin-bottom: 5rem;
     }
 
     .headline {
@@ -242,9 +243,10 @@ img {
     }
 
     .headline__caption__title {
-        font-size: 6.5rem;
-        line-height: 5rem;
-        margin-bottom: 4rem;
+        font-size: 5.7rem;
+        line-height: 4.75rem;
+        margin-bottom: 2.7rem;
+        margin-right: 10rem;
     }
 
     .headline__description {
@@ -256,8 +258,9 @@ img {
     }
 
     .headline__description__text {
-        font-size: 2.1rem;
-        line-height: 2.7rem;
+        font-size: 2rem;
+        line-height: 2.53rem;
+        margin-right: 8rem;
     }
 
     /* RATINGS MQs RATINGS MQs */
@@ -265,14 +268,15 @@ img {
     .rating-container {
         margin: auto auto;
         padding-top: 10rem;
-        padding-left: 15%;
         width: 100%;
+        margin-top: 2.5rem;
     }
 
     .rating {
+        width: 80%;
         display: flex;
         margin: 2.1rem auto;
-        padding: 1.9rem 1rem;
+        padding: 1.5rem 0;
         align-items: center;
         justify-content: center;
     }
@@ -282,27 +286,15 @@ img {
         padding: 0 3rem 0 0;
     }
 
-    .rating__svg svg {
-        margin: 0 .2rem;
-    }
-
     .rating__description {
         margin: 0;
         padding: 0;
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         font-weight: 700;
-    }
-
-    .margin-left-5 {
-        margin-left: 5rem;
     }
 
     .margin-left-10 {
         margin-left: 10rem;
-    }
-
-    .margin-right-5 {
-        margin-right: 5rem;
     }
 
     .margin-right-10 {
@@ -319,34 +311,43 @@ img {
     }
 
     .card {
-        padding: 3.4rem;
+        padding: 2.7rem;
         margin: 0;
     }
 
+    .card__user {
+        margin-top: 1.6rem;
+        margin-left: 1.1rem;
+    }
 
     .card__user__image {
-        width: 4.5rem;
+        width: 4rem;
+        margin-top: .2rem;
+    }
+
+    .card__user__buyer  {
+        margin-left: 2rem;
     }
 
 
     .card__user__buyer__name {
-        font-size: 1.85rem;
-        line-height: 1rem;
+        font-size: 1.6rem;
+        line-height: .7rem;
         margin: .6rem;
     }
 
     .card__user__buyer__verified {
-        font-size: 1.85rem;
-        line-height: 1rem;
+        font-size: 1.6rem;
+        line-height: .7rem;
         margin: .6rem;
     }
 
     .card__review {
         color: var(--Ligh-Grayish-Magenta);
-        font-size: 1.7rem;
+        font-size: 1.65rem;
         font-weight: 500;
-        line-height: 2.5rem;
-        margin: 2rem 0 1rem 0;
+        line-height: 2.24rem;
+        padding-bottom: 1rem;
     }
 
     .margin-right {
@@ -354,13 +355,13 @@ img {
     }
 
     .margin-2 {
-        margin-top: 2rem;
-        margin-bottom: -2rem;
+        margin-top: 1.15rem;
+        margin-bottom: -1.15rem;
     }
 
     .margin-4 {
-        margin-top: 4rem;
-        margin-bottom: -2rem;
+        margin-top: 3.15rem;
+        margin-bottom: -3rem;
     }
 
 
